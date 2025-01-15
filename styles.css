@@ -1,0 +1,331 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #bf4e34, #f1ebebd9, #07548b);
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.logo img {
+  max-width: 80px;
+  transition: transform ease-in-out;
+  transition: tra;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+/* Section Styles */
+section {
+  padding: 50px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.42);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* About Section */
+#about h1 span {
+  color: #ff6600;
+}
+
+#about ul li {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  padding-left: 25px;
+  position: relative;
+  list-style: none;
+}
+
+/* Companies Grid */
+.companies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.company {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 15px;
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.company:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.company h3 {
+  margin-bottom: 0px;
+}
+
+.company span {
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #8c5244;
+}
+
+.company img {
+  max-width: 100px;
+}
+
+/* Services Grid */
+.services-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.service p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Team Section */
+.team-slider {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h4 {
+  margin-bottom: 4px;
+  margin-top: 5px;
+}
+
+.team-member span {
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #8c5244;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #ff6600;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: bisque;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff6600;
+}
+
+/* Go to Top Button */
+.go-to-top-btn {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff6600;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none; /* Initially hidden */
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.go-to-top-btn:hover {
+  background-color: #e65c00;
+}
+
+/* Show button when scrolled down */
+.show-go-to-top-btn {
+  display: block;
+}
+
+.scale {
+  animation: scaleAnimation 3s ease-in-out infinite;
+}
+
+@keyframes scaleAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul {
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .companies-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .team-slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: linear-gradient(135deg, #bf4e34, #f1ebebd9, #07548b);
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px 5px;
+  }
+
+  nav ul {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .company,
+  .service,
+  .team-member {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .company img,
+  .service img,
+  .team-member img {
+    width: 80px;
+  }
+
+  footer {
+    padding: 10px 5px;
+  }
+}
