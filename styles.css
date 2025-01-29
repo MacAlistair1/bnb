@@ -329,3 +329,21 @@ footer a:hover {
     padding: 10px 5px;
   }
 }
+
+.para {
+  width: 75%;
+  text-align: justify;
+  left: 15%;
+  position: relative;
+}
+.para li{
+  list-style: circle !important;
+}
+
+.choose-us{
+  display: block;
+  align-content: center;
+  left: 15%;
+  position: relative;
+  text-align: left;
+}
