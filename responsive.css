@@ -1,0 +1,80 @@
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  section {
+    padding: 30px;
+    max-width: 95%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    display: -webkit-inline-box;
+  }
+
+  nav ul li {
+    margin: 5px;
+  }
+
+  .companies-grid,
+  .services-grid,
+  .team-slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company,
+  .service,
+  .team-member {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about h1 {
+    font-size: 2rem;
+  }
+
+  .para {
+    padding-left: 0px;
+  }
+
+  .choose-us {
+    padding-left: 0px;
+    left: 5%;
+  }
+
+  .company,
+  .service,
+  .team-member {
+    width: 100%;
+    max-width: 245px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px 5px;
+  }
+
+  nav ul {
+    padding-left: 10px;
+  }
+
+  .company,
+  .service,
+  .team-member {
+    width: 100%;
+    max-width: 245px;
+  }
+
+  .company img,
+  .service img,
+  .team-member img {
+    width: 80px;
+  }
+}
