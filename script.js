@@ -24,3 +24,9 @@ goToTopBtn.addEventListener("click", function (event) {
     behavior: "smooth",
   });
 });
+
+if (location.pathname == "/ja") {
+  location.replace("/ja.html");
+} else if (location.pathname == "/en") {
+  location.replace("/");
+}
